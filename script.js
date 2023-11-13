@@ -1,4 +1,12 @@
 // Write your JavaScript code here!
+document.getElementById("").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let pilot = document.getElementById("pilotInputId").value;
+    let copilot = document.getElementById("copilotInputId").value;
+    let fuelLevel = document.getElementById("fuelLevelInputId").value;
+    let cargoMass = document.getElementById("cargoMassInputId").value;
+
+})
 
 window.addEventListener("load", function() {
 
