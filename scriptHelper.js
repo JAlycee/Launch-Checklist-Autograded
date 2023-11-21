@@ -1,6 +1,6 @@
 // Write your helper functions here!
-const fetch = require('node-fetch');
-require('cross-fetch/polyfill');
+//const fetch = require('node-fetch');
+//('cross-fetch/polyfill');
 
 function addDestinationInfo(document, list, name, diameter, star, distance, moons, imageUrl) {
     const listElement = document.getElementById(list);
