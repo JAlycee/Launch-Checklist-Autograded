@@ -1,21 +1,22 @@
-// // Write your helper functions here!
-// //const fetch = require('node-fetch');
-// //('cross-fetch/polyfill');
+// Write your helper functions here!
+const fetch = require('node-fetch');
+('cross-fetch/polyfill');
 
-function addDestinationInfo(document, destinationInfo) {
-    const missionTarget = document.getElementById("missionTarget");
-    missionTarget.innerHTML = `
-        <h2>Mission Destination</h2>
+function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
+    document.getElementById("missionTarget").innerHTML =
+    `
+    <h2>Mission Destination</h2>
         <ol>
-            <li>Name: ${destinationInfo.name}</li>
-            <li>Diameter: ${destinationInfo.diameter}</li> 
-            <li>Star: ${destinationInfo.star}</li>
-            <li>Distance from Earth: ${destinationInfo.distance}</li>
-            <li>Number of Moons: ${destinationInfo.moons}</li>
+            <li>Name: ${name} </li>
+            <li>Diameter: ${diameter}</li>
+            <li>Star: ${star}</li>
+            <li>Distance from Earth: ${distance}</li>
+            <li>Number of Moons: ${moons}</li>
         </ol>
-        <img src="${destinationInfo.image}">
-    `;
+    <img src="${imageUrl}">
+    `
 }
+
 function validateInput(testInput) {
     return testInput === "" ? "Empty" : isNaN(testInput) ? "Not a Number" : "Is a Number";
 };

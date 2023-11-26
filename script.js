@@ -1,4 +1,4 @@
-//const { myFetch, pickPlanet, addDestinationInfo, formSubmission } = require("./scriptHelper");
+const { myFetch, pickPlanet, addDestinationInfo, formSubmission } = require("./scriptHelper");
 
 // Write your JavaScript code here!
 window.addEventListener("load", function() {
@@ -7,6 +7,7 @@ if (form) {
     form.addEventListener("submit",handleSubmit);
 }
 });
+
 function handleSubmit(event) {
     event.preventDefault();
     let pilot = document.getElementById("pilotInputId").value;
